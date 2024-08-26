@@ -27,7 +27,7 @@
         padding: 20px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
 
         .option
         {
@@ -104,6 +104,11 @@
             &:hover
             {
                 background-color: rgba(230, 74, 105, 0.803);
+            }
+
+            &.logout
+            {
+                background-color: #1a73e8;
             }
         }
     }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./chatList.css"
+import AddUser from './addUser/AddUser';
 
 const Chatlist = () => {
 
@@ -11,7 +12,7 @@ const Chatlist = () => {
         <div className="searchBar">
           <img src="/search.png" alt="" />
           <input type="text" placeholder='Search' />
-        </div>
+        </div> 
         <img src={addMode ? "/minus.png" : "/plus.png"} alt="" onClick={() => {
           setAddMode((prev) => {
             return prev = !prev;
@@ -40,7 +41,7 @@ const Chatlist = () => {
           <p>Hello</p>
         </div>
       </div>
-
+      {addMode ? <AddUser></AddUser> : <></>}
     </div>
   )
 }
